@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #00BFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger{
+    padding:60px 50px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.bars1,.bars2, .bars3, .bars4{
+    width: 50px;
+    height: 5px;
+    background: #00BFFF;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: 2s;
+}
+
+
+
+.burger .bars1.change{
+    transform: translateY(15px)rotate(45deg);
+    transition: 1.5s;
+}
+.burger .bars4.change{
+    transform: translateY(-15px)rotate(-45deg);
+    transition: 1.5s;
+}
+.burger .bars2.change{
+    transform: translateX(-500px);
+    transition: 4s;
+}
+.burger .bars3.change{
+    transform: translateX(500px);
+    transition: 4s;
+}
